@@ -837,8 +837,8 @@ hr{
     .gachchan{
         display: none;
     }
-    .email_dkandtop{
-        display: none;
+    .email_dkandtop .btn_email{
+        width: 20% !important;
     }
 
 }
@@ -1059,6 +1059,19 @@ col_gt31
   width: 70px;
   border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+        .btn_dautrang{
+            right: 10px !important;
+        }
+    }
+@media screen and (max-width: 520px) {
+    .btn_dautrang{
+            right: 0px !important;
+            bottom: 80px !important;
+            background: #2DBBE9 !important;
+            width: 10% !important;
+        }
+}
 /*
     Chi tiết giảng viên
 */
@@ -1073,6 +1086,9 @@ col_gt31
 }
 .col_icon_cn ul li {
     display: inline;
+}
+.col_icon_cn ul li img:hover{
+    transform: scaleY(1.1);
 }
 .content_imggv{
     background: white;
@@ -1105,6 +1121,12 @@ col_gt31
 }
 .btn_xemthemgiangvien{
     font-size: 13pt;
+}
+.xemthemgv_rps{
+    transition: .2s ease;
+}
+.xemthemgv_rps:hover{
+    transform: scale(1.05);
 }
 @media screen and (max-width: 768px) {
     .xemthemgv_rps{
@@ -1272,15 +1294,45 @@ col_gt31
     display: inline;
     margin-right: 15px;
 }
-@media screen and (max-width: 992px) {
-        .img_rps_maugiao{
-            width: 30%;
-            height: 200px;
-        }
-        .img_rps_maugiao{
-            height: 180px;
-        }
+.img_tacgia_ykienhocsinh ul li img:hover{
+    transform:scale(1.1);
 }
+.icon_cnct ul li img:hover{
+    transform:scaleY(1.1);
+}
+@media screen and (max-width: 992px) {
+    .img_tacgia_ykienhocsinh ul{
+        margin-left: 5px;
+    }
+     .img_tacgia_ykienhocsinh ul li{
+        margin-right: 0px;
+     }
+     .textarea{
+        height: 190px;
+     }
+
+}
+@media screen and (max-width: 768px) {
+        .textarea{
+        height: 140px;
+     }
+  }
+  @media screen and (max-width: 520px) {
+        .col-test{
+            width: 100%;
+        }
+        .col_test{
+            display: none;
+        }
+        .khoahocnoibat{
+            width: 100%;
+        }
+        .img_hvnx_rps{
+            margin-bottom: 20px
+        }
+
+  }
+
 
 
 
