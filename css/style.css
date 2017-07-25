@@ -279,7 +279,12 @@ ul li {
     text-align: justify;
     padding: 10px;
 }
-
+.xemtatcakhoahoc a{
+    color: white;
+}
+.xemtatcakhoahoc a:hover{
+    text-decoration: none;
+}
 .padding_news {
     color: white;
     margin: 20px 0px;
@@ -593,7 +598,9 @@ ul li {
 .slide1-box {
     padding: 2em 0em;
     margin-bottom: 20px;
+    margin-top: 40px;
     overflow: hidden;
+
 }
 .btn_email a:hover img{
     transform: rotate(180deg);
@@ -648,19 +655,18 @@ ul li {
   transform: translate(70px, -230px);
   -ms-transform: translate(-50%, -50%)
 }
-.item1:hover img {
-  opacity: 0.7;
+.item1 img{
+    opacity: 0.9;
 }
-
-.item1:hover .middle {
+.item1:hover img{
   opacity: 1;
 }
 
-.text:hover{
-    color: white;
-    background: #E09B2B;
-    opacity: 1;
+.item1:hover .middle{
+  opacity: 1;
 }
+
+
 .text {
   background-color: #29ABE2;
   color: white;
@@ -795,6 +801,9 @@ hr{
     .content_baby_itn{
         margin-bottom: 20px;
     }
+    .border_baby{
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -811,6 +820,9 @@ hr{
 }
 @media screen and (max-width: 520px)
 {
+    .tabcontent2{
+        flex-wrap: wrap;
+    }
     .slide_book{
         width: 100%;
     }
@@ -1039,7 +1051,12 @@ col_gt31
     opacity: 1;
 }
 
-.text:hover{
+.text2:hover{
+    color: white;
+    background: #E09B2B;
+    opacity: 1;
+}
+.text3:hover{
     color: white;
     background: #E09B2B;
     opacity: 1;
@@ -1338,4 +1355,3 @@ col_gt31
 
 /* day vao nhanh cua Hung */
 /*day vao nhanh cua nam*/
-
