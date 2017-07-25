@@ -322,7 +322,7 @@
     </div>
     <!-- end slide hot -->
     <!-- slide teacher -->
-    <div class="container cachdong slide1-box" style="background: url('images/slidegiangvien.png');background-size: cover;background-position: center;">
+    <div class="container cachdong slide1-box" id="now" style="background: url('images/slidegiangvien.png');background-size: cover;background-position: center;">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                 <div class="owl-carousel">
@@ -550,5 +550,11 @@ $(function() {
         }, 800);
         return false;
     });
+});
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#now').offset().top
+    }, 'slow');
 });
 </script>
