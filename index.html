@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
 </head>
@@ -17,30 +19,25 @@
                 <div class="row">
                     <div class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-12 menu_icon1">
                         <ul>
-                            <li><img src="images/icon1 (2).png" alt="">Xala Hà Đông, Hà Nội, Việt Nam</li>
-                            <li> <img class="icon_phone" src="images/icon2 (2).png" alt="" style="max-width:5%;">0123456789</li>
-                            <li> <img src="images/icon3 (2).png" alt="">evina@gmail.com</li>
+                            <li><i class="fa fa-map-marker"></i> Xala Hà Đông, Hà Nội, Việt Nam</li>
+                            <li><i class="fa fa-phone"></i> 0123456789</li>
+                            <li><i class="fa fa-envelope"></i> evina@gmail.com</li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-md-offset-1 col-sm-6 col-sm-offset-5 col-xs-12 menu_icon2">
                         <ul>
-                            <li><a href=""><img src="images/icon5.png" alt="" style="width:30px;"></a></li>
-                            <li><a href=""><img src="images/icon4.png" alt="" style="width:30px;"></a></li>
-                            <li><a href=""><img src="images/icon8.png" alt="" style="width:30px;"></a></li>
-                            <li><a href=""><img src="images/icon7.png" id="img_icon7" alt="" style="width:30px;"></a></li>
+                            <li><a href=""><img src="images/fb.png" alt=""></a></li>
+                            <li><a href=""><img src="images/li.png" alt=""></a></li>
+                            <li><a href=""><img src="images/in.png" alt=""></a></li>
+                            <li><a href=""><img src="images/pi.png" alt=""></a></li>
+                            <li><a href=""><img src="images/tw.png" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4  col-md-offset-1 logo" style="padding: 0px;">
-                <h1>EVina English</h1>
-                <div class="gachchan"></div>
-                <h3>CENTER</h3>
-                <h4>Leading English - Leading your life</h4>
-            </div>
-            <div class="col-md-6 menu_responsive">
+
                 <nav class="navbar navbar-default">
                     <div class="container">
                         <div class="navbar-header">
@@ -50,10 +47,10 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#">Menu</a>
+                            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav navbar-right">
                                 <li class="active"><a href="index.html">Trang chủ</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Giới thiệu <span class="caret"></span></a>
@@ -82,45 +79,7 @@
                         <!--/.nav-collapse -->
                     </div>
                 </nav>
-            </div>
-            <div class="col-md-6 item_dropdown">
-                <ul>
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li> <span class="dropdown">
-                <lable class="dropbtn">Giới thiệu
-                    </lable>
-                    <hr></hr>
-                        <div class="dropdown-content">
 
-                            <a href="gioithieu.html">Về chúng tôi</a>
-                            <a href="doingugiangvien.html">Đội ngũ giảng viên</a>
-                            <a href="phuongphapdaotao.html">Phương pháp đào tạo</a>
-                        </div>
-                        </span>
-                    </li>
-                    <li> <span class="dropdown">
-                <lable class="dropbtn">Khóa học
-                    </lable>
-                    <hr></hr>
-                        <div class="dropdown-content">
-                            <a href="tienganhmaugiao.html">T.A Mẫu giáo</a>
-                            <a href="#">T.A Tiểu học</a>
-                            <a href="#">T.A THCS</a>
-                            <a href="#">T.A GT cho người mất gốc</a>
-                            <a href="#">T.A GT cho người đi làm</a>
-                            <a href="#">Khóa luyện thi TOEIC</a>
-                        </div>
-                        </span>
-                    </li>
-                    <li> <a href="">Tin tức</a>
-                    </li>
-                    <li> <a href="">Giáo trình</a>
-                    </li>
-                    <li><a href="">Thư viện</a></li>
-                    <li><a href="">Liên hệ</a></li>
-                    <li><a href="" class="search"><img src="images/search.png" style="width: 15px;"></a></li>
-                </ul>
-            </div>
         </div>
         <div class="row ">
             <div class="col-md-12" style="padding:0px;">
@@ -550,11 +509,5 @@ $(function() {
         }, 800);
         return false;
     });
-});
-$(document).ready(function () {
-    // Handler for .ready() called.
-    $('html, body').animate({
-        scrollTop: $('#now').offset().top
-    }, 'slow');
 });
 </script>
