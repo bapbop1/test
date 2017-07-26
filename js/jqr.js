@@ -6,10 +6,10 @@ function openCity(evt, cityName) {
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" btn-primary", "");
+        tablinks[i].className = tablinks[i].className.replace(" activetab2", "");
     }
     document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " btn-primary";
+    evt.currentTarget.className += " activetab2";
 }
 
 // Get the element with id="defaultOpen" and click on it
@@ -22,10 +22,10 @@ function opensile(evt, Name) {
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" btn-primary", "");
+        tablinks[i].className = tablinks[i].className.replace(" activetab", "");
     }
     document.getElementById(Name).style.display = "block";
-    evt.currentTarget.className += " btn-primary";
+    evt.currentTarget.className += " activetab";
 
 }
 
