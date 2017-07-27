@@ -1589,6 +1589,22 @@ col_gt31
 .scrolltop {
     right: 10px;
 }
+.tbl-dangky {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px; 
+}
+.text-field {
+    width: 100%;
+}
+.btn-dk {
+    color: white;
+    border-radius: 5px;
+    background: #009BDC;
+    border:0;
+    margin-right: 15px;
+    padding: 8px;
+}
 /* End footer ------------------------ */
 @media (max-width: 1024px) {
     /* Header ------------------------------ */
