@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/perfundo.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -188,8 +189,8 @@
     <div class="container">
         <div class="row" style="margin-bottom: 20px">
             <div class="col-md-12" style="text-align: center;">
-                    <a class="tablink" onclick="opensile(event, 'treem')" id="defaultOpen">Tiếng anh cho trẻ em</a>
-                    <a class="tablink" onclick="opensile(event, 'dilam')">Tiếng anh giao tiếp cho sinh viên, người đi làm</a>
+                <a class="tablink" onclick="opensile(event, 'treem')" id="defaultOpen">Tiếng anh cho trẻ em</a>
+                <a class="tablink" onclick="opensile(event, 'dilam')">Tiếng anh giao tiếp cho sinh viên, người đi làm</a>
             </div>
         </div>
         <div class="row tabcontent2" id="treem" style="display: flex;">
@@ -493,12 +494,44 @@
             2017 Copyright by ThienViet
         </div>
         <div class="btn-fixed dangky" id="register">
-            <a href=""><i class="fa fa-envelope"></i> Đăng ký</a>
+            <a href="#perfundo-content"><i class="fa fa-envelope"></i> Đăng ký</a>
         </div>
         <div class="btn-fixed scrolltop" id="btntop">
             <a href=""><i class="fa fa-angle-up"></i></a>
         </div>
     </footer>
+    <div id="perfundo-content" class="perfundo__overlay bounceIn">
+        <div class="perfundo__content perfundo__html">
+            <h3 style="color: white; font-size: 14pt; text-align: center; background: #009BDC; line-height: 35px">Đăng ký tư vấn</h3>
+            <table class="tbl-dangky">
+                <tr>
+                    <td width="30%">Họ và tên:</td>
+                    <td width="70%"><input class="text-field" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input class="text-field" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td><input class="text-field" type="text"></td>
+                </tr>
+                <tr>
+                    <td>SĐT:</td>
+                    <td><input class="text-field" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Nội dung:</td>
+                    <td><textarea class="text-field" name="" id="" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input class="btn-dk" type="reset" value="Nhập lại"><input class="btn-dk" type="submit" value="Đăng ký"></td>
+                </tr>
+            </table>
+        </div>
+        <a href="#perfundo-untarget" class="perfundo__close perfundo__control">Close</a>
+    </div>
     <!-- end footer -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
