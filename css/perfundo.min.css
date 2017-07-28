@@ -34,7 +34,8 @@
 
 .perfundo__content {
     overflow: auto;
-    height: 50%
+    height: auto;
+    z-index: 9999;
 }
 
 .is-active>.perfundo__content,

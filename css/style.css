@@ -35,9 +35,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.container {
-    overflow: hidden;
+
+.cachduoi {
+    margin-bottom: 2em;
 }
+
+h1,
+h2,
+h3 {
+    font-family: avobold;
+}
+
+
 
 /* End global --------------------------------- */
 
@@ -84,9 +93,16 @@ body {
     border: 0;
     box-shadow: none;
     border-radius: 0;
-    margin-top: 37px;
     left: 0;
     right: -100px;
+}
+
+li.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu>li:first-child {
+    padding-top: 37px;
 }
 
 .dropdown-menu>li>a {
@@ -100,20 +116,43 @@ body {
     color: #009BDC;
 }
 
+.search {
+    margin-top: 15px;
+    border: 0;
+    width: 40px;
+    height: 25px;
+    background: url(../images/search.png) no-repeat center right;
+    transition: .3s ease-in-out;
+}
+
+.search:focus {
+    width: 200px;
+    border: 1px solid #009BDC;
+    border-radius: 15px;
+    padding: 0 10px;
+    font-size: 9pt;
+}
+
+
+
+
+
 
 /* End navbar -------------------------------------------------- */
 
 
 /* Carousel 1 ------------------------------------------- */
+
 .img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  height: auto;
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
+
 .carousel-indicators .active {
     background: #2E3335;
 }
@@ -137,21 +176,41 @@ body {
     font-size: 2.5vw;
     line-height: 4vw;
 }
+
 .caption1 {
     border-bottom: 5px solid white;
     display: inline-block;
 }
+
 .caption2 {
     font-size: 3.5vw;
 }
 
+.carousel-indicators {
+    z-index: 1;
+}
+
+
+
+
+
+
 /* End carousel 1 ------------------------------------ */
+
+
 /* Carousel 2 ------------------------ */
+
 .item1 {
-    background: white;
     display: inline-block;
-    text-align: center;
     width: 100%;
+}
+
+.subitem1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    background: white;
+    padding-bottom: 10px;
 }
 
 .anhgv {
@@ -187,12 +246,22 @@ body {
     color: #999;
     margin-bottom: 15px;
 }
+
+
+
+
+
+
 /* End carousel 2 -------------------- */
+
 
 /* Homepage --------------------------------- */
 
+
+/* Header ------------------------ */
+
 .topbar {
-    
+
     line-height: 35px;
 }
 
@@ -206,54 +275,41 @@ body {
     text-align: right;
 }
 
-
-/* .menu_icon1 ul {
-    list-style: none;
-    padding: 0px;
-}
-
-.menu_icon1 ul img {
-    padding-right: 8px;
-    padding-left: 5px;
-}
-
-.menu_icon1 ul li {
-    display: inline;
-    color: white;
-    line-height: 40px;
-    font-size: 9pt;
-    margin-right: 15px;
-}
-
-.menu_icon1 ul li img:hover {
-    transform: scaleY(1.2);
-} */
-
 .logo {
     margin: 15px 0;
 }
 
-.centent_slide span {
-    font-size: 20pt;
-    color: white;
-    font-weight: bold;
+.bgheader {
+    height: 350px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-.centent_slide {
+.bgheader>h1 {
     position: absolute;
-    top: 68%;
-    left: 25%;
+    color: white;
+    font-size: 20pt;
+    left: 10%;
+    top: 15%;
 }
 
-.gachchan {
-    border: 1px solid #009BDC;
-    width: 150px;
-    margin: 10px 0px 10px 20px;
+.breadcrumbs {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, .8);
+    padding: 15px;
 }
 
-.matgoc {
-    margin-left: 23%;
+.breadcrumbs a {
+    color: #808080;
 }
+
+
+
+
+
+/* End header ------------------------- */
 
 .content_book {
     background: #009BDC;
@@ -457,7 +513,6 @@ body {
     padding: 10px;
     position: absolute;
     bottom: 0;
-    z-index: 999;
 }
 
 .overlay2 {
@@ -570,58 +625,6 @@ body {
     background: #009BDC;
 }
 
-
-/* .title_bottom ul li a {
-    color: white;
-    font-size: 12px;
-}
-.title_bottom ul li a:hover {
-    text-decoration: underline;
-}
-
-.title_bottom_itn {
-    display: inline-block;
-    margin-top: 40px;
-    color: white;
-    cursor: pointer;
-    border-bottom: 2px solid white;
-    font-family: avobold;
-    font-size: 9pt;
-    line-height: 12pt;
-}
-
-.title_bottom ul {
-    list-style: none;
-    color: white;
-    margin-top: 45px;
-}
-
-.title_bottom ul li {
-    margin-bottom: 10px;
-}
-
-.icon_bottom ul {
-    list-style: none;
-} */
-
-.ps_relative {
-    position: relative;
-}
-
-
-/* .icon_bottom ul li {
-    cursor: pointer;
-    display: inline;
-}
-
-.icon_bottom ul li img:hover {
-    transform: scale(1.1);
-}
-
-.icon_bottom {
-    text-align: right;
-} */
-
 .copyright {
     line-height: 30px;
     background: #1B1464;
@@ -630,129 +633,9 @@ body {
     font-size: 10pt;
 }
 
-
-/* .menu_icon2 {
-    margin-top: 8px;
-}
-
-.menu_icon2 ul li {
-
-    display: inline;
-    margin-right: 5px;
-}
-
-.menu_icon1 ul li {
-    display: inline;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    font-size: 11px;
-}
-
-.dropbtn:hover {
-    color: #009BDC;
-}
-
-.dropdown-content a {
-    padding: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .caret {
-    display: inline-block;
-}
-
-.caret {
-    display: none;
-}
-
-.item_dropdown {
-    margin-top: 30px;
-    font-weight: bold;
-} */
-
 .captiongv {
     text-align: center;
     padding-bottom: 5px;
-}
-
-.contentgv {
-    text-align: center;
-    padding: 0px 15px;
-}
-
-.slidegv1 {
-    color: black;
-    background: #F8F9F8;
-    padding: 0px;
-    margin-right: 40px;
-}
-
-.col_slide_gv {
-    padding-left: 100px;
-}
-
-.title_namegv {
-    text-align: center;
-    color: #009BDC;
-    font-size: 17px;
-    padding: 5px 0px;
-    font-weight: bold;
-}
-
-.dropdown {}
-
-.item_dropdown ul {
-    list-style: none;
-    padding: 0px;
-    margin-left: 40px;
-    font-size: 14px;
-}
-
-.item_dropdown ul li {
-    display: inline;
-    padding: 0px 5px;
-}
-
-.item_dropdown a {
-    color: #666666;
-    font-family: avobold;
-    text-decoration: none;
-}
-
-.item_dropdown a:hover {
-    color: #009BDC;
 }
 
 .contact_tetx:hover {
@@ -772,10 +655,6 @@ body {
     display: block;
 }
 
-.displ {
-    display: none;
-}
-
 .content_baby {
     font-size: 12px;
     text-align: justify;
@@ -791,7 +670,6 @@ body {
 
 .content_baby_itn h1 {
     font-size: 11pt;
-    font-family: avobold;
     margin: 15px 0;
 }
 
@@ -829,7 +707,7 @@ body {
 }
 
 .box_pp {
-    padding: 20px;
+    padding: 25px;
     background: #009BDC;
 }
 
@@ -838,7 +716,6 @@ body {
     color: white;
     text-align: center;
     margin-bottom: 40px;
-    font-family: avobold;
 }
 
 .box_pp p {
@@ -846,14 +723,6 @@ body {
     color: white;
     text-align: justify;
     line-height: 20px;
-}
-
-.text_sildetext {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .slide1-box {
@@ -887,18 +756,6 @@ body {
 
 .slide1-box .owl-next {
     right: -50px;
-}
-
-.menu_responsive {
-    display: none;
-}
-
-.menu_responsive a {}
-
-.menu_responsive ul li {
-    color: white;
-    display: inline;
-    font-size: 10pt;
 }
 
 
@@ -985,528 +842,11 @@ body {
 
 
 
-
-
-
-/*
-
-    -Gioi thiệu
-*/
-
-.ctn_gioithieu {
-    position: relative;
-}
-
-.btn_gioithieu {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-}
-
-.ctn_gt1,
-.ctn_gioithieu {
-    margin-bottom: 30px;
-}
-
-.col_gt {
-    padding: 35px 25px;
-}
-
-.col_gt1 {
-    background: #009BDC;
-    padding: 4em;
-    color: white;
-}
-
-.col_gt11 {
-    padding: 6em;
-}
-
-.center-text h1 {
-    font-weight: bold !important;
-    font-size: 23pt;
-}
-
-.center-text h4 {
-    font-size: 20pt;
-}
-
-.steps {
-    width: 100%;
-    height: 170px;
-    display: block;
-    background: rgba(0, 155, 220, .5);
-    color: white;
-    font-size: 22pt;
-    text-align: center;
-    line-height: 40pt;
-    text-align: center;
-}
-
-.content_gt1 {
-    text-align: justify;
-    font-family: avo;
-}
-
-.title_gt1 {
-    padding-bottom: 15px;
-    font-size: 20pt;
-}
-
-.center-text {
-    position: relative;
-    float: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.gachchan2 {
-    border: 1px solid white;
-    width: 150px;
-    margin: 10px 0px 10px 18px;
-}
-
-
-
-
-/* ctn_gt2*/
-
-.ctn_gt2 {
-    padding: 2em;
-    background: #009BDC;
-    margin-bottom: 30px;
-}
-
-.col-gt2 {
-    color: white;
-}
-
-.col-gt2 h1 {
-    font-size: 20pt;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.col-gt2 p {
-    text-align: center;
-    padding: 0px 25px;
-}
-
-
-
-
-/*
-col_gt31
-*/
-
-.col_gt3 {
-    background: #2E3192;
-    margin-bottom: 30px;
-}
-
-.col_gt31 {
-    padding: 0.5em;
-}
-
-.col_gt31 h1 {
-    color: white;
-    font-size: 20pt;
-    margin-bottom: 40px;
-}
-
-.col_gt31 p {
-    color: white;
-    text-align: justify;
-}
-
-
-
-
-/*ctn_gt4*/
-
-.col_gt4 {
-    background: #009BDC;
-}
-
-
-
-
-/*ctn_gt5*/
-
-.ctn_gt5 {
-    margin-top: 30px;
-    background: #2E3192;
-    padding: 2em;
-    margin-bottom: 30px;
-}
-
-.ctn_gt51 h1 {
-    color: white;
-    font-size: 20pt;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.ctn_gt51 p {
-    color: white;
-    text-align: justify;
-}
-
-
-/* đội ngũ giảng viên*/
-
-.img_responsiv {
-    margin-bottom: 20px;
-}
-
-.middle2 {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25px, -230px);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.middle3 {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-30px, 80px);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.img1:hover img {
-    opacity: .8;
-}
-
-.img2:hover img {
-    opacity: .8;
-}
-
-.img1:hover .middle2 {
-    opacity: 1;
-}
-
-.img2:hover .middle3 {
-    opacity: 1;
-}
-
-.text2:hover {
-    color: white;
-    background: #E09B2B;
-    opacity: 1;
-}
-
-.text3:hover {
-    color: white;
-    background: #E09B2B;
-    opacity: 1;
-}
-
-.text2 {
-    background-color: #29ABE2;
-    color: white;
-    font-size: 16px;
-    padding: 10px 10px;
-    width: 70px;
-    border-radius: 10px;
-}
-
-.text3 {
-    background-color: #29ABE2;
-    color: white;
-    font-size: 16px;
-    padding: 10px 10px;
-    width: 70px;
-    border-radius: 10px;
-}
-
-
-
-
-/*
-    Chi tiết giảng viên
-*/
-
-.col_chitietgv {
-    padding: 2em;
-    background: #E6E6E6;
-}
-
-.col_icon_cn {
-    text-align: right;
-    margin-left: 15px;
-    margin-bottom: 20px;
-}
-
-.col_icon_cn ul li {
-    display: inline;
-}
-
-.col_icon_cn ul li img:hover {
-    transform: scaleY(1.1);
-}
-
-.content_imggv {
-    background: white;
-}
-
-.content_imggv h1 {
-    font-size: 20pt;
-    margin: 30px 30px;
-}
-
-.content_imggv h2 {
-    margin: 30px 30px;
-    font-size: 15pt;
-}
-
-.content_imggv p {
-    font-size: 15pt;
-    margin: 30px 30px;
-}
-
-.content_imggv h3 {
-    margin: 30px 30px;
-}
-
-.img_responsive1 {
-    margin-bottom: 20px;
-}
-
-.col_cotent_gv {
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.btn_xemthemgv {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.btn_xemthemgiangvien {
-    font-size: 13pt;
-}
-
-.xemthemgv_rps {
-    transition: .2s ease;
-}
-
-.xemthemgv_rps:hover {
-    transform: scale(1.05);
-}
-
-
-
-/*
-    - Khóa học
-*/
-
-.khoahoc_tt h1 {
-    color: #009BDC;
-    font-size: 20pt;
-    font-weight: bold;
-}
-
-.khoahoc_tt p {
-    padding: 20px 0px;
-}
-
-
-
-
-/* TA mấu giáo*/
-
-.ta_maugiao {
-    font-size: 12pt;
-    font-weight: bold;
-    padding: 5px;
-    color: white;
-    background: #009BDC;
-}
-
-.menu_ctg {
-    padding: 5px;
-    border-left: 10px solid #009BDC;
-    color: #009BDC;
-}
-
-.giatienganhmaugiao {
-    background: #009BDC;
-    color: white;
-    padding: 1em;
-}
-
-.giatienganhmaugiao h1 {
-    padding-bottom: 10px;
-}
-
-.giatienganhmaugiao h2 {
-    padding-bottom: 5px;
-    font-weight: bold;
-    border-bottom: 5px solid white;
-    font-size: 20pt;
-}
-
-.giatienganhmaugiao h3 {
-    padding-top: 30px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.giatienganhmaugiao h3 a {
-    color: white;
-}
-
-.giatienganhmaugiao h4 {
-    margin-bottom: 20px;
-}
-
-.giatienganhmaugiao h4 a {
-    color: white;
-}
-
-.giatienganhmaugiao h5 {
-    margin-bottom: 30px;
-}
-
-.title_khnb {
-    padding: 7px;
-    margin-bottom: 20px;
-    line-height: 21px;
-    border-left: 10px solid #009BDC;
-    color: #009BDC;
-    font-size: 15pt;
-}
-
-.tamaugioa {
-    padding: 7px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    background: #009BDC;
-    color: white;
-}
-
-.tamaugioa:hover {
-    color: white;
-}
-
-.info_khoahoc {
-    color: #009BDC;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20pt;
-}
-
-.content_info_khoahoc {
-    background: #009BDC;
-    padding: 20px;
-    height: 300px;
-    color: white;
-    font-size: 11pt;
-}
-
-.content_info_khoahoc ul li {
-    padding-bottom: 32px;
-}
-
-.content_info_khoahoc3 ul li {
-    padding-bottom: 22px !important;
-}
-
-.phuongphapgd {
-    font-size: 17pt;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.menu_item_phuongphapgd ol {
-    list-style: initial;
-    padding-left: 35px;
-}
-
-.menu_item_phuongphapgd ol li {
-    margin-bottom: 3px;
-}
-
-.content_phuongphapgd,
-.menu_item_phuongphapgd {
-    font-size: 12pt;
-}
-
-.cachduoii {
-    margin-bottom: 20px;
-}
-
-.icon_cnct ul li {
-    float: left;
-    margin-right: 5px;
-}
-
-.textarea {
-    width: 100%;
-    height: 275px;
-    padding: 15px;
-}
-
-.guidanhgia {
-    color: white;
-    float: right;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.khoahocnoibat {
-    padding-right: 0px;
-}
-
-.menu_khnb1 {
-    margin-bottom: 10px;
-}
-
-.menu_khnb1 img {
-    float: left;
-    width: 40%;
-    margin-right: 7px;
-}
-
-.menu_khnb1 span {
-    font-size: 11pt;
-    margin-top: 25px;
-}
-
-.tacgia_ykienhocsinh {
-    font-size: 12pt;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.img_tacgia_ykienhocsinh ul {
-    margin-left: 20%;
-    margin-bottom: 30px;
-}
-
-.img_tacgia_ykienhocsinh ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.img_tacgia_ykienhocsinh ul li img:hover {
-    transform: scale(1.1);
-}
-
-.icon_cnct ul li img:hover {
-    transform: scaleY(1.1);
-}
-
-
 /* Footer --------------------------- */
+
+footer {
+    margin-top: 2em;
+}
 
 .footer-box {
     width: 80%;
@@ -1574,167 +914,436 @@ col_gt31
 .btn-fixed {
     display: inline-block;
     background: #009BDC;
-    padding:5px 10px;
+    padding: 5px 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: fixed;
     bottom: 30px;
+    z-index: 9999;
 }
+
 .btn-fixed a {
     color: white;
 }
+
 .dangky {
     right: 50px;
 }
+
 .scrolltop {
     right: 10px;
 }
+
 .tbl-dangky {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 10px; 
+    border-spacing: 10px;
 }
+
 .text-field {
     width: 100%;
 }
+
 .btn-dk {
     color: white;
     border-radius: 5px;
     background: #009BDC;
-    border:0;
+    border: 0;
     margin-right: 15px;
     padding: 8px;
 }
+
+
+
+
+
 /* End footer ------------------------ */
-@media (max-width: 1024px) {
-    /* Header ------------------------------ */
-    .topbar-address {
-        font-size: 8pt;
-    }
-    .navbar-brand>img {
-        width: 150px;
-    }
-    /* End Header ---------------------------- */
-    /* Carousel -------------------------- */
 
-    /* End carousel ------------------------ */
-    /* Homepage --------------------- */
-    .content_baby_itn {
-        height: 200px;
-    }
-    .news, .detailnews {
-        height: auto;
-    }
-    .title_news {
-        padding:15px 0;
-    }
-    .main_content {
-        font-size: 9pt;
-    }
-    /* End homepage ---------------------- */
-}
-@media (max-width: 992px) {
-    /* Header -------------------------- */
-    .topbar-lkxh {
-        text-align: left;
-        padding-left: 30px;
-    }
-    /* End Header ------------------------- */
-    /* Carousel -------------------------- */
 
-    /* End carousel ------------------------ */
-    /* Homepage ---------------------- */
-    .main_content {
-        padding: 0;
-        font-size: 8pt;
-    }
-    .xemthem2 {
-        display: none;
-    }
-    /* End homepage ------------------------- */
-    /* Footer -------------------------- */
-    .logo2 {
-        width: 150px;
-    }
-    /* End Footer ------------------------- */
+/* Lien He -------------------------------- */
+
+.form-lienhe {
+    color: #414042;
 }
-@media (max-width: 767px) {
-    /* Header -------------------------- */
-    .topbar {
-        display: none;
-    }
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-        background: none;
-    }
-    .navbar-default .navbar-toggle {
-        border:none;
-    }
-    .navbar-brand {
-        margin-left: 0;
-    }
-    .navbar-toggle {
-        margin-top: 26px;
-        margin-right: 0;
-    }
-    /* End header ----------------------- */
-    /* Carousel 2 --------------------- */
-    .slide1-box .owl-prev {
-        left: -40px;
-    }
-    /* End carousel 2 ------------------- */
-    /* Homepage --------------------------- */
-    .img_chungtoilaai {
-        display: none;
-    }
-    .grade_text {
-        padding: 0 15px;
-    }
-    .slide_book {
-        height: auto;
-    }
-    .content_baby {
-        flex-wrap: wrap;
-    }
-    .item2 {
-        max-height: 500px;
-    }
-    .border_baby {
-        margin-bottom: 20px;
-    }
-    .anhgv {
-        max-height: 250px;
-    }
-    .imgnews {
-        width: 100%;
-    }
-    .detailnews {
-        width: 100%;
-        padding-bottom: 15px;
-    }
-    /* End Homepage ---------------------- */
-    /* Footer --------------------------- */
-    .footer-box {
-        width: 90%;
-    }
-    .footer-box1 {
-        width: 100%;
-    }
-    .footer-box1 ul li:first-child {
-        text-align: center;
-    }
-    .footer-box2 {
-        display: none;
-    }
-    /* End Footer ----------------------- */
+
+.form-lienhe table {
+    margin: auto;
 }
-@media (max-width: 412px) {
-    /* Header ----------------------- */
-    .caption {
-        font-size: 12pt;
-        line-height: 14pt;
-    }
-    .caption2 {
-        font-size: 14pt;
-    }
-    /* End header ---------------------- */
+
+.table-lienhe td {
+    padding: .5em;
 }
+
+.textbox-lienhe {
+    width: 250px;
+    border: 1px solid #ccc !important;
+}
+
+.guidi {
+    border: none;
+    background: #2EBBE9;
+    color: white;
+    padding: .5em 1em;
+    float: left;
+    cursor: pointer;
+}
+
+.vietlai {
+    border: none;
+    background: #2EBBE9;
+    color: white;
+    padding: .5em 1em;
+    float: right;
+    cursor: pointer;
+}
+
+.lienhe-info {
+    width: 320px;
+}
+
+.lienhe-info p {
+    color: white;
+    display: block;
+    font-family: avobold;
+    padding: 15px 15px;
+    background: #2BBDEB;
+    text-align: center;
+}
+
+.lienhe-info span {
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 5px 0;
+    background: #1B1464;
+    color: white;
+    font-size: 9pt;
+    margin: 25px 0;
+}
+
+
+
+
+
+/* End Lien He ----------------------- */
+
+
+/* Giang vien -------------------- */
+
+.chitietgv-box {
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #009BDC;
+    padding: 0;
+}
+
+.imggv {
+    padding: 0;
+    overflow: hidden;
+}
+
+.imggv img {
+    width: 100%;
+}
+
+.chitietgv {
+    color: white;
+    padding: 25px;
+}
+
+.xemthemgv {
+    display: inline-block;
+    color: white;
+    background: #009BDC;
+    padding: 15px 25px;
+}
+
+.chitietgv p {
+    line-height: 15pt;
+    font-size: 10pt;
+}
+
+.chitietgv h1 {
+    font-size: 14pt;
+    line-height: 25pt;
+}
+
+
+
+
+/* End giang vien ------------------ */
+
+
+/* Gioi thieu ------------------------ */
+
+.tamnhin {
+    color: white;
+    background: #009BDC;
+    padding: 50px;
+    text-align: center;
+}
+
+.tamnhin h1 {
+    font-size: 20pt;
+    margin-bottom: 25px;
+}
+
+.sumenh {
+    color: white;
+    padding: 0;
+    display: flex;
+}
+
+.sumenh-text {
+    padding: 30px;
+    padding-left: 0;
+}
+
+.sumenh h1 {
+    margin-bottom: 25px;
+    font-size: 20pt;
+}
+
+.sumenh p {
+    line-height: 16pt;
+}
+
+
+/* End gioi thieu ----------------------- */
+
+
+/* Thu vien -------------------- */
+
+.thuvien img {
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+.thuvien img:hover {
+    filter: brightness(70%);
+}
+
+
+/* End thu vien -------------------- */
+
+
+/* Tin tuc ----------------------- */
+
+.imgtintuc {
+    position: relative;
+}
+
+.imgtintuc img {
+    width: 100%;
+}
+
+.motatintuc {
+    background: #E6E6E6;
+    padding: 15px;
+}
+
+.motatintuc h3 a {
+    font-size: 14pt;
+    margin: 20px 0 25px 0;
+    color: #1A1A1A;
+    display: inline-block;
+}
+
+.motatintuc p {
+    color: #666666;
+    line-height: 13pt;
+}
+
+.imgtintuc:hover .overlay2 {
+    width: 100%;
+    height: 100%;
+}
+
+.imgtintuc:hover a {
+    padding: 5px;
+    width: 55px;
+    height: 25px;
+    font-size: 9pt;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.title-aside {
+    color: #333333;
+    font-family: avobold;
+    font-size: 16pt;
+    line-height: 40px;
+    display: inline-block;
+    border-left: 10px solid #009BDC;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.khnb {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.khnb img {
+    float: left;
+    margin-right: 5%;
+    width: 40%;
+}
+
+.khnb h3 {
+    margin-top: 25px;
+    float: left;
+    width: 55%;
+    color: #4D4D4D;
+    font-size: 10pt;
+}
+
+.ykien {
+    margin-bottom: 15px;
+}
+
+.ykien p {
+    margin-bottom: 15px;
+}
+
+.ykien a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.fanpage img {
+    width: 100%;
+}
+
+.paging {
+    display: flex;
+    justify-content: center;
+}
+
+.paging li {
+    float: left;
+}
+
+.paging a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    margin-right: 1px;
+    background: #009BDC;
+}
+
+
+/* End tin tuc ----------------------- */
+
+
+/* Chi tiet tin tuc ------------------ */
+
+.baiviet h1 {
+    font-size: 20pt;
+    line-height: 25pt;
+}
+
+.baiviet li {
+    float: left;
+    border-right: 1px solid #666666;
+    color: #666666;
+    padding: 0 30px;
+    margin: 20px 0;
+}
+
+.baiviet li:first-child {
+    padding-left: 0;
+}
+
+.baiviet li:last-child {
+    border: 0;
+}
+
+.baiviet img {
+    width: 100%;
+}
+
+.baiviet p {
+    margin: 15px 0;
+}
+
+.text-field2 {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding-left: 15px;
+}
+
+
+/* End chi tiet tin tuc ---------------- */
+
+
+/* Chi tiet khoa hoc -------------------- */
+
+.baiviet2 {
+    background: #009BDC;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.kh-info {
+    font-family: avobold;
+    line-height: 40px;
+    font-size: 14pt;
+    padding: 15px;
+}
+
+.kh-info a {
+    color: white;
+}
+
+.ttkh {
+    display: inline-block;
+    background: #009BDC;
+    color: white;
+    padding: 15px;
+    font-size: 10pt;
+}
+
+.tbl-kh table {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.tbl-kh td {
+    padding-bottom: 10px;
+}
+
+.motakh {
+    padding: 15px;
+}
+
+.motakh p {
+    margin-bottom: 10px;
+    line-height: 12pt;
+}
+
+.kh-title1 {
+    font-size: 18pt;
+    color: #009BDC;
+    margin: 20px 0;
+}
+.kh-title2 {
+    font-size: 16pt;
+    margin: 15px 0;
+    color: #333333;
+}
+.diemmanh li {
+    background: url(../images/dot.png) no-repeat center left;
+    padding: 10px 20px;
+}
+.binhluan {
+    margin-top: 2em;
+}
+.baiviet2-thongtin p {
+    color:#666;
+    line-height: 16pt;
+}
+/* End chi tiet khoa hoc ------------------- */
