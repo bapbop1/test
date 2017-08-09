@@ -93,17 +93,11 @@ h3 {
     border: 0;
     box-shadow: none;
     border-radius: 0;
-    left: 0;
-    right: -100px;
 }
 
-li.dropdown:hover>.dropdown-menu {
-    display: block;
-}
 
-.dropdown-menu>li:first-child {
-    padding-top: 37px;
-}
+
+
 
 .dropdown-menu>li>a {
     transition: .3s ease-in-out;
@@ -1210,7 +1204,15 @@ footer {
     display: inline-block;
     margin-right: 15px;
 }
-
+.tablinks3 {
+    border: 0;
+    background: none;
+    border-radius: 10px;
+    padding:0;
+}
+.active3 {
+    border:2px solid #009BDC;
+}
 .fanpage img {
     width: 100%;
 }

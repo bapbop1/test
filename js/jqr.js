@@ -11,10 +11,8 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " activetab2";
 }
-
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("default").click();
-
+/*--------------------------------------------------------------------------------------------*/
 function opensile(evt, Name) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent2");
@@ -29,27 +27,37 @@ function opensile(evt, Name) {
     evt.currentTarget.className += " activetab";
 
 }
-
-// Get the element with id="defaultOpen" and click on it
-
 document.getElementById("defaultOpen").click();
+/*--------------------------------------------------------------------------------------------*/
+/*function openCmt(evt, Name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent3");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink3");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" activetab3", "");
+    }
+    document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " activetab3";
 
+}
+document.getElementById("defaultOpen3").click();*/
+/*--------------------------------------------------------------------------------------------*/
 $(document).ready(function(){
     jQuery(function($) {
         if ($(window).width() > 769) {
-            $('.navbar .dropdown').hover(function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-
-            }, function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
-
-            });
 
             $('.navbar .dropdown > a').click(function() {
                 location.href = this.href;
             });
 
         }
+    });
+
+    $(function() {
+        $('#navbar li:has(ul)').doubleTapToGo();
     });
 
 });
