@@ -48,17 +48,13 @@ document.getElementById("defaultOpen3").click();*/
 $(document).ready(function(){
     jQuery(function($) {
         if ($(window).width() > 769) {
-
             $('.navbar .dropdown > a').click(function() {
                 location.href = this.href;
             });
-
         }
     });
-
     $(function() {
         $('#navbar li:has(ul)').doubleTapToGo();
     });
-
 });
 
